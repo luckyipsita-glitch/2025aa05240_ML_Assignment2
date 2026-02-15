@@ -14,26 +14,42 @@ The application allows users to:
 
 ## 📊 Dataset Description
 
-**Dataset Name**: [Your Dataset Name - e.g., Heart Disease UCI / Bank Marketing / etc.]
+**Dataset Name**: Mobile Phone Classification Dataset
 
-**Source**: [Kaggle / UCI Machine Learning Repository]
+**Source**: Kaggle / UCI Machine Learning Repository
 
 **Dataset Characteristics**:
 | Property | Value |
 |----------|-------|
-| Number of Instances | [e.g., 1000+] |
-| Number of Features | [e.g., 15] |
-| Target Variable | [e.g., Binary Classification - 0/1] |
-| Missing Values | [e.g., None / Handled] |
+| Number of Instances | 1001 |
+| Number of Features | 20 |
+| Target Variable | Binary Classification |
+| Missing Values | None |
 
 **Feature Description**:
 | Feature Name | Type | Description |
 |--------------|------|-------------|
-| feature_1 | Numeric | [Description] |
-| feature_2 | Numeric | [Description] |
-| feature_3 | Categorical | [Description] |
-| ... | ... | ... |
-| target | Binary | Target variable (0/1) |
+| id | Numeric | Unique identifier for each phone |
+| battery_power | Numeric | Battery capacity in mAh |
+| blue | Binary | Has Bluetooth (0/1) |
+| clock_speed | Numeric | Processor clock speed in GHz |
+| dual_sim | Binary | Dual SIM support (0/1) |
+| fc | Numeric | Front camera megapixels |
+| four_g | Binary | 4G support (0/1) |
+| int_memory | Numeric | Internal memory in GB |
+| m_dep | Numeric | Mobile depth in cm |
+| mobile_wt | Numeric | Mobile weight in grams |
+| n_cores | Numeric | Number of processor cores |
+| pc | Numeric | Primary camera megapixels |
+| px_height | Numeric | Pixel resolution height |
+| px_width | Numeric | Pixel resolution width |
+| ram | Numeric | RAM in MB |
+| sc_h | Numeric | Screen height in cm |
+| sc_w | Numeric | Screen width in cm |
+| talk_time | Numeric | Talk time in hours |
+| three_g | Binary | 3G support (0/1) |
+| touch_screen | Binary | Touch screen support (0/1) |
+| wifi | Binary | WiFi support (0/1) |
 
 **Data Preprocessing Steps**:
 1. Handled missing values using [method]
