@@ -14,48 +14,50 @@ The application allows users to:
 
 ## 📊 Dataset Description
 
-**Dataset Name**: Mobile Phone Classification Dataset
+**Dataset Name**: Mobile Phone Specifications Dataset
 
-**Source**: Kaggle / UCI Machine Learning Repository
+**Source**: Test dataset with 1000 mobile phone records
 
 **Dataset Characteristics**:
 | Property | Value |
 |----------|-------|
-| Number of Instances | 1001 |
-| Number of Features | 20 |
-| Target Variable | Binary Classification |
-| Missing Values | None |
+| Number of Instances | 1000 |
+| Number of Features | 20 (excluding ID) |
+| Number of Binary Features | 10 |
+| Number of Numeric Features | 10 |
+| Missing Values | 0 |
+| Target Variable | Not specified in test set |
 
 **Feature Description**:
-| Feature Name | Type | Description |
-|--------------|------|-------------|
-| id | Numeric | Unique identifier for each phone |
-| battery_power | Numeric | Battery capacity in mAh |
-| blue | Binary | Has Bluetooth (0/1) |
-| clock_speed | Numeric | Processor clock speed in GHz |
-| dual_sim | Binary | Dual SIM support (0/1) |
-| fc | Numeric | Front camera megapixels |
-| four_g | Binary | 4G support (0/1) |
-| int_memory | Numeric | Internal memory in GB |
-| m_dep | Numeric | Mobile depth in cm |
-| mobile_wt | Numeric | Mobile weight in grams |
-| n_cores | Numeric | Number of processor cores |
-| pc | Numeric | Primary camera megapixels |
-| px_height | Numeric | Pixel resolution height |
-| px_width | Numeric | Pixel resolution width |
-| ram | Numeric | RAM in MB |
-| sc_h | Numeric | Screen height in cm |
-| sc_w | Numeric | Screen width in cm |
-| talk_time | Numeric | Talk time in hours |
-| three_g | Binary | 3G support (0/1) |
-| touch_screen | Binary | Touch screen support (0/1) |
-| wifi | Binary | WiFi support (0/1) |
+| Feature Name | Type | Range | Description |
+|--------------|------|-------|-------------|
+| battery_power | Numeric (int) | 0-2000 | Battery capacity in mAh |
+| blue | Binary (0/1) | 0-1 | Has Bluetooth support |
+| clock_speed | Numeric (float) | 0.5-3.0 | Processor clock speed in GHz |
+| dual_sim | Binary (0/1) | 0-1 | Dual SIM support |
+| fc | Numeric (int) | 0-20 | Front camera megapixels |
+| four_g | Binary (0/1) | 0-1 | 4G support |
+| int_memory | Numeric (int) | 2-128 | Internal memory in GB |
+| m_dep | Numeric (float) | 0.1-1.0 | Mobile depth in cm |
+| mobile_wt | Numeric (int) | 80-200 | Mobile weight in grams |
+| n_cores | Numeric (int) | 1-8 | Number of processor cores |
+| pc | Numeric (int) | 0-20 | Primary camera megapixels |
+| px_height | Numeric (int) | 0-1600 | Pixel resolution height |
+| px_width | Numeric (int) | 500-2000 | Pixel resolution width |
+| ram | Numeric (int) | 256-3900 | RAM in MB |
+| sc_h | Numeric (int) | 5-19 | Screen height in cm |
+| sc_w | Numeric (int) | 0-16 | Screen width in cm |
+| talk_time | Numeric (int) | 2-20 | Talk time in hours |
+| three_g | Binary (0/1) | 0-1 | 3G support |
+| touch_screen | Binary (0/1) | 0-1 | Touch screen support |
+| wifi | Binary (0/1) | 0-1 | WiFi support |
 
 **Data Preprocessing Steps**:
-1. Handled missing values using [method]
-2. Encoded categorical variables using Label Encoding
-3. Standardized numerical features for certain models (Logistic Regression, KNN)
-4. Split data into training (80%) and testing (20%) sets
+1. No missing values detected in the dataset
+2. All features are numeric or binary (no encoding needed)
+3. Two float features (clock_speed, m_dep) for certain models requiring scaling
+4. Standard scaling applied for distance-based models (KNN, Logistic Regression)
+5. Data ready for direct model training without further preprocessing
 
 ## 🤖 Models Used
 
