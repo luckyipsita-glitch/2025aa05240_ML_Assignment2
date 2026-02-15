@@ -196,7 +196,7 @@ streamlit run app.py
 ## 🔗 Links
 
 - **GitHub Repository**: https://github.com/luckyipsita-glitch/2025aa05240_ML_Assignment2.git
-- **Live Streamlit App**: [Your Streamlit App Link]
+- **Live Streamlit App**: https://2025aa05240mlassignment2-da4kckdf9omagz7ylwgmsf.streamlit.app/
 
 ## 👨‍💻 Author
 
