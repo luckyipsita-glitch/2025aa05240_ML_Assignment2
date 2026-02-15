@@ -200,7 +200,7 @@ streamlit run app.py
 
 ## 👨‍💻 Author
 
-**Name**: [Your Name]  
+**Name**: Ipsita Nanda  
 **Program**: M.Tech (AIML/DSE)  
 **Institution**: BITS Pilani  
 **Course**: Machine Learning - Assignment 2
